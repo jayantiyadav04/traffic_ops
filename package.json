@@ -1,0 +1,20 @@
+{
+    "name": "traffic-ops",
+    "version": "1.0.0",
+    "description": "Traffic-Ops MERN Stack Application",
+    "main": "index.js",
+    "scripts": {
+        "start": "cd server && npm start",
+        "server": "cd server && npm run dev",
+        "client": "cd client && npm run dev",
+        "dev": "concurrently \"npm run server\" \"npm run client\"",
+        "install-all": "npm install && cd client && npm install && cd ../server && npm install",
+        "build": "cd client && npm install && npm run build && cd ../server && npm install"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    }
+}
